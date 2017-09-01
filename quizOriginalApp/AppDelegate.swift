@@ -8,6 +8,10 @@
 
 import UIKit
 
+import NCMB
+
+
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -16,6 +20,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        StoryboardHelper.adjust(to: window)
+        
+        // NCMBとアプリと紐付ける
+        NCMB.setApplicationKey("9ce604eb256cd9c70cfa05ec3170418e2b3ac764713cfc05ed4e0f7760c11375", clientKey: "f416358d67bf454200306288a68f3dbccedd254e2cf5d701ffeed98e3d1c5d8f")
+        
+        UINavigationBar.appearance().tintColor = UIColor.init(red: 254/255, green: 250/255, blue: 251/255, alpha: 1.0)
+        
+        UINavigationBar.appearance().barTintColor = UIColor.init(red: 255/255, green: 75/255, blue: 96/255, alpha: 0.2)
+        
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.init(red: 254/255, green: 250/255, blue: 251/255, alpha: 1.0)]
+        
+        UITabBar.appearance().tintColor = UIColor.init(red: 254/255, green: 250/255, blue: 251/255, alpha: 1.0)
+        
+        //UITabBarItem.appearance().setTitleTextAttributes(<#T##attributes: [String : Any]?##[String : Any]?#>, for: UIControlState.selected)
+        
+        UITabBar.appearance().barTintColor = UIColor.init(red: 255/255, green: 75/255, blue: 96/255, alpha: 0.2)
+        
         return true
     }
 
