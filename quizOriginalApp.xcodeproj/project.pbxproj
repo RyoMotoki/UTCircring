@@ -24,6 +24,7 @@
 		1E2D39251F3F94AB006DD0EB /* dbad138c-19a4-05d2-b393-e4b4481eebaf.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E2D39241F3F94AB006DD0EB /* dbad138c-19a4-05d2-b393-e4b4481eebaf.png */; };
 		1E2D397D1F4C3BC7006DD0EB /* スクリーンショット2017-07-01.21.12.41.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E2D397C1F4C3BC7006DD0EB /* スクリーンショット2017-07-01.21.12.41.png */; };
 		1E2D397F1F56A82D006DD0EB /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2D397E1F56A82D006DD0EB /* AddViewController.swift */; };
+		1E2D39811F596744006DD0EB /* APIKeyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2D39801F596744006DD0EB /* APIKeyManager.swift */; };
 		1E4F0D411E7E7FE500D26FA7 /* 128.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1E4F0D401E7E7FE500D26FA7 /* 128.gif */; };
 		1E4F0D431E7E813C00D26FA7 /* 128-1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1E4F0D421E7E813C00D26FA7 /* 128-1.gif */; };
 		1E4F0D451E7E814A00D26FA7 /* 128-2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1E4F0D441E7E814A00D26FA7 /* 128-2.gif */; };
@@ -85,6 +86,7 @@
 		1E2D39241F3F94AB006DD0EB /* dbad138c-19a4-05d2-b393-e4b4481eebaf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dbad138c-19a4-05d2-b393-e4b4481eebaf.png"; sourceTree = "<group>"; };
 		1E2D397C1F4C3BC7006DD0EB /* スクリーンショット2017-07-01.21.12.41.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "スクリーンショット2017-07-01.21.12.41.png"; sourceTree = "<group>"; };
 		1E2D397E1F56A82D006DD0EB /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		1E2D39801F596744006DD0EB /* APIKeyManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIKeyManager.swift; sourceTree = "<group>"; };
 		1E4F0D401E7E7FE500D26FA7 /* 128.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 128.gif; sourceTree = "<group>"; };
 		1E4F0D421E7E813C00D26FA7 /* 128-1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "128-1.gif"; sourceTree = "<group>"; };
 		1E4F0D441E7E814A00D26FA7 /* 128-2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "128-2.gif"; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 		1E13D11E1E5D74B00021341B /* quizOriginalApp */ = {
 			isa = PBXGroup;
 			children = (
+				1E2D39801F596744006DD0EB /* APIKeyManager.swift */,
 				1E13D11F1E5D74B00021341B /* AppDelegate.swift */,
 				1E4F0D581E7FD21500D26FA7 /* TabBarController.swift */,
 				7ACD38161F43B1D20089F37D /* Models */,
@@ -510,6 +513,7 @@
 				1E13D1221E5D74B00021341B /* ViewController.swift in Sources */,
 				1E13D1201E5D74B00021341B /* AppDelegate.swift in Sources */,
 				1E0E8F741EF67CCD00C6A34A /* webViewController.swift in Sources */,
+				1E2D39811F596744006DD0EB /* APIKeyManager.swift in Sources */,
 				1EAF9B111E72C9BC00F49F6D /* ResultFootballViewController.swift in Sources */,
 				1E4F0D4B1E7F13F000D26FA7 /* myPageViewController.swift in Sources */,
 				1E4F0D4F1E7F7B6000D26FA7 /* SignUpViewController.swift in Sources */,

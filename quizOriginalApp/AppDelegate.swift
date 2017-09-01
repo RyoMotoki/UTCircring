@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         StoryboardHelper.adjust(to: window)
         
         // NCMBとアプリと紐付ける
-        NCMB.setApplicationKey("9ce604eb256cd9c70cfa05ec3170418e2b3ac764713cfc05ed4e0f7760c11375", clientKey: "f416358d67bf454200306288a68f3dbccedd254e2cf5d701ffeed98e3d1c5d8f")
+        NCMB.setApplicationKey(APIKeyManager.applicationKey, clientKey: APIKeyManager.clientKey)
         
         UINavigationBar.appearance().tintColor = UIColor.init(red: 254/255, green: 250/255, blue: 251/255, alpha: 1.0)
         

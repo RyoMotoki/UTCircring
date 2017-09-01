@@ -8,6 +8,9 @@
 build/
 DerivedData/
 
+## APIKey
+APIKeyManager.swift
+
 ## Various settings
 *.pbxuser
 !default.pbxuser
