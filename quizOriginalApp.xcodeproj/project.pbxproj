@@ -25,6 +25,10 @@
 		1E2D397D1F4C3BC7006DD0EB /* スクリーンショット2017-07-01.21.12.41.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E2D397C1F4C3BC7006DD0EB /* スクリーンショット2017-07-01.21.12.41.png */; };
 		1E2D397F1F56A82D006DD0EB /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2D397E1F56A82D006DD0EB /* AddViewController.swift */; };
 		1E2D39811F596744006DD0EB /* APIKeyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2D39801F596744006DD0EB /* APIKeyManager.swift */; };
+		1E4BE71C1F77A45B00AF43E7 /* BadmintonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4BE71B1F77A45B00AF43E7 /* BadmintonViewController.swift */; };
+		1E4BE71E1F77A4E700AF43E7 /* ChorusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4BE71D1F77A4E700AF43E7 /* ChorusViewController.swift */; };
+		1E4BE7201F77ABFA00AF43E7 /* ResultBadmintonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4BE71F1F77ABFA00AF43E7 /* ResultBadmintonViewController.swift */; };
+		1E4BE7221F77AC0F00AF43E7 /* ResultChorusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4BE7211F77AC0F00AF43E7 /* ResultChorusViewController.swift */; };
 		1E4F0D411E7E7FE500D26FA7 /* 128.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1E4F0D401E7E7FE500D26FA7 /* 128.gif */; };
 		1E4F0D431E7E813C00D26FA7 /* 128-1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1E4F0D421E7E813C00D26FA7 /* 128-1.gif */; };
 		1E4F0D451E7E814A00D26FA7 /* 128-2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1E4F0D441E7E814A00D26FA7 /* 128-2.gif */; };
@@ -87,6 +91,10 @@
 		1E2D397C1F4C3BC7006DD0EB /* スクリーンショット2017-07-01.21.12.41.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "スクリーンショット2017-07-01.21.12.41.png"; sourceTree = "<group>"; };
 		1E2D397E1F56A82D006DD0EB /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		1E2D39801F596744006DD0EB /* APIKeyManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIKeyManager.swift; sourceTree = "<group>"; };
+		1E4BE71B1F77A45B00AF43E7 /* BadmintonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadmintonViewController.swift; sourceTree = "<group>"; };
+		1E4BE71D1F77A4E700AF43E7 /* ChorusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChorusViewController.swift; sourceTree = "<group>"; };
+		1E4BE71F1F77ABFA00AF43E7 /* ResultBadmintonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultBadmintonViewController.swift; sourceTree = "<group>"; };
+		1E4BE7211F77AC0F00AF43E7 /* ResultChorusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultChorusViewController.swift; sourceTree = "<group>"; };
 		1E4F0D401E7E7FE500D26FA7 /* 128.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 128.gif; sourceTree = "<group>"; };
 		1E4F0D421E7E813C00D26FA7 /* 128-1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "128-1.gif"; sourceTree = "<group>"; };
 		1E4F0D441E7E814A00D26FA7 /* 128-2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "128-2.gif"; sourceTree = "<group>"; };
@@ -205,6 +213,21 @@
 			path = Defaults;
 			sourceTree = "<group>";
 		};
+		1E8383261F85EB700011E298 /* nothing */ = {
+			isa = PBXGroup;
+			children = (
+				1E4BE71F1F77ABFA00AF43E7 /* ResultBadmintonViewController.swift */,
+				1E4BE71D1F77A4E700AF43E7 /* ChorusViewController.swift */,
+				1E4BE71B1F77A45B00AF43E7 /* BadmintonViewController.swift */,
+				1E4F0D461E7ECEB800D26FA7 /* BaseballViewController.swift */,
+				1EAF9B0E1E72C29200F49F6D /* FootballViewController.swift */,
+				1E4BE7211F77AC0F00AF43E7 /* ResultChorusViewController.swift */,
+				1E4F0D481E7ECED300D26FA7 /* ResultBaseballViewController.swift */,
+				1EAF9B101E72C9BC00F49F6D /* ResultFootballViewController.swift */,
+			);
+			name = nothing;
+			sourceTree = "<group>";
+		};
 		7A75DBB81F43790000D10B51 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
@@ -230,11 +253,8 @@
 			children = (
 				1EAF9B0C1E72BF4500F49F6D /* FirstViewController.swift */,
 				1E13D1211E5D74B00021341B /* ViewController.swift */,
-				1E4F0D461E7ECEB800D26FA7 /* BaseballViewController.swift */,
-				1EAF9B0E1E72C29200F49F6D /* FootballViewController.swift */,
 				1E13D1311E5D8E900021341B /* ResultViewController.swift */,
-				1E4F0D481E7ECED300D26FA7 /* ResultBaseballViewController.swift */,
-				1EAF9B101E72C9BC00F49F6D /* ResultFootballViewController.swift */,
+				1E8383261F85EB700011E298 /* nothing */,
 			);
 			name = Shindan;
 			sourceTree = "<group>";
@@ -504,9 +524,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E4BE7201F77ABFA00AF43E7 /* ResultBadmintonViewController.swift in Sources */,
 				1E0CE9A41EA0C83D00E14F97 /* SearchStartViewController.swift in Sources */,
 				1E4F0D511E7F7B7000D26FA7 /* SignInViewController.swift in Sources */,
 				1E2D397F1F56A82D006DD0EB /* AddViewController.swift in Sources */,
+				1E4BE7221F77AC0F00AF43E7 /* ResultChorusViewController.swift in Sources */,
+				1E4BE71E1F77A4E700AF43E7 /* ChorusViewController.swift in Sources */,
+				1E4BE71C1F77A45B00AF43E7 /* BadmintonViewController.swift in Sources */,
 				7ACD38181F43B1E30089F37D /* Genre.swift in Sources */,
 				7A75DBC61F43929900D10B51 /* BorderTextField.swift in Sources */,
 				1E4F0D591E7FD21500D26FA7 /* TabBarController.swift in Sources */,
@@ -643,9 +667,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = RG924NK39E;
 				INFOPLIST_FILE = quizOriginalApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.ryo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -664,7 +689,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = RG924NK39E;
 				INFOPLIST_FILE = quizOriginalApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.ryo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -21,7 +21,8 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
          let tabImage = userIcon?.image(with: CGSize(width: 15,height: 15))
          tabBar.items![2].selectedImage = tabImage
          */
-        self.tabBar.unselectedItemTintColor = UIColor(red: 250.0/255.0, green: 177.0/255.0, blue: 175.0/255.0, alpha: 1.0)
+        //self.tabBar.unselectedItemTintColor = UIColor.darkGray
+        //self.tabBar.unselectedItemTintColor = UIColor(red: 250.0/255.0, green: 177.0/255.0, blue: 175.0/255.0, alpha: 1.0)
     }
     
     override func didReceiveMemoryWarning() {

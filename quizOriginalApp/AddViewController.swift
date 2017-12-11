@@ -40,6 +40,10 @@ class AddViewController: UIViewController, UITextFieldDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
 
     
     @IBAction func add() {
@@ -82,17 +86,28 @@ class AddViewController: UIViewController, UITextFieldDelegate {
             obj?.setObject(cMan, forKey: "manWoman")
             obj?.setObject(cAddress, forKey: "address")
             obj?.setObject(cSns, forKey: "sns")
+            obj?.setObject(cRate, forKey: "rateUniversity")
             
-            
-            let alert: UIAlertController = UIAlertController(title: "申請完了", message: "申請完了しました。審査が終わるまで3日ほどお待ちください。", preferredStyle: UIAlertControllerStyle.alert)
-            let okAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: {
-                (action: UIAlertAction!) -> Void in
+            obj?.saveInBackground({(error) in
+                if error != nil {
+                    print(error!.localizedDescription)
+                } else {
+                    let alert: UIAlertController = UIAlertController(title: "申請完了", message: "申請完了しました。審査が終わるまで3日ほどお待ちください。", preferredStyle: UIAlertControllerStyle.alert)
+                    let okAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: {
+                        (action: UIAlertAction!) -> Void in
+                        self.navigationController?.popViewController(animated: true)
+                        
+                    })
+                    
+                    alert.addAction(okAction)
+                    self.present(alert, animated: true, completion: nil)
+                    
+                }
+                
             })
             
-            alert.addAction(okAction)
-            present(alert, animated: true, completion: nil)
             
-            self.navigationController?.popViewController(animated: true)
+            
             
         }
         

@@ -26,17 +26,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // NCMBとアプリと紐付ける
         NCMB.setApplicationKey(APIKeyManager.applicationKey, clientKey: APIKeyManager.clientKey)
         
-        UINavigationBar.appearance().tintColor = UIColor.init(red: 254/255, green: 250/255, blue: 251/255, alpha: 1.0)
+        let conColor = UIColor.init(red: 95/255, green: 111/255, blue: 237/255, alpha: 1.0)
+        let baseColor = UIColor.init(red: 242/255, green: 242/255, blue: 244/255, alpha: 1.0)
         
-        UINavigationBar.appearance().barTintColor = UIColor.init(red: 255/255, green: 75/255, blue: 96/255, alpha: 0.2)
+        UINavigationBar.appearance().tintColor = UIColor.white
+        //UINavigationBar.appearance().tintColor = UIColor.init(red: 254/255, green: 250/255, blue: 251/255, alpha: 1.0)
+        UINavigationBar.appearance().barTintColor = conColor
+        //UINavigationBar.appearance().barTintColor = UIColor.init(red: 255/255, green: 75/255, blue: 96/255, alpha: 0.2)
         
-        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.init(red: 254/255, green: 250/255, blue: 251/255, alpha: 1.0)]
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
+        //UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.init(red: 254/255, green: 250/255, blue: 251/255, alpha: 1.0)]
         
-        UITabBar.appearance().tintColor = UIColor.init(red: 254/255, green: 250/255, blue: 251/255, alpha: 1.0)
+        
+        UITabBar.appearance().tintColor = UIColor.white
+        //UITabBar.appearance().tintColor = UIColor.init(red: 254/255, green: 250/255, blue: 251/255, alpha: 1.0)
         
         //UITabBarItem.appearance().setTitleTextAttributes(<#T##attributes: [String : Any]?##[String : Any]?#>, for: UIControlState.selected)
-        
-        UITabBar.appearance().barTintColor = UIColor.init(red: 255/255, green: 75/255, blue: 96/255, alpha: 0.2)
+        UITabBar.appearance().barTintColor = conColor
+        //UITabBar.appearance().barTintColor = UIColor.init(red: 255/255, green: 75/255, blue: 96/255, alpha: 0.2)
         
         return true
     }

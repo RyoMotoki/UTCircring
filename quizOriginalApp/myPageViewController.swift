@@ -42,6 +42,7 @@ class myPageViewController: UIViewController, UITextFieldDelegate {
             alert.addAction(okAction)
             present(alert, animated: true, completion: nil)
         } else {
+            /*
             let alert: UIAlertController = UIAlertController(title: "ユーザー情報", message: "お気に入り機能はバージョン2.0以降でご利用頂けます。リリースまでしばらくお待ち下さい。", preferredStyle: UIAlertControllerStyle.alert)
             let okAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: {
                 (action: UIAlertAction!) -> Void in
@@ -49,7 +50,8 @@ class myPageViewController: UIViewController, UITextFieldDelegate {
             
             alert.addAction(okAction)
             present(alert, animated: true, completion: nil)
-            //performSegue(withIdentifier: "toUser", sender: nil)
+            */
+            performSegue(withIdentifier: "toUser", sender: nil)
         }
     }
     

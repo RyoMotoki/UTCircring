@@ -33,7 +33,7 @@ class myPageCorrectViewController: UIViewController, UITableViewDataSource, UITa
         
         userInfoTableView.tableFooterView = UIView()
         
-        loadUserInfo()
+        //loadUserInfo()
         
         //print("\(currentUser)")
         print("\(cUser)")
@@ -192,7 +192,7 @@ class myPageCorrectViewController: UIViewController, UITableViewDataSource, UITa
         return true
     }
     
-    
+    /*
     func loadUserInfo() {
         let query = NCMBQuery(className: "user")
         query?.getObjectInBackground(withId: NCMBUser.current().objectId, block: { (object, error) in
@@ -206,6 +206,6 @@ class myPageCorrectViewController: UIViewController, UITableViewDataSource, UITa
             }
         })
     }
-    
+    */
     
 }
